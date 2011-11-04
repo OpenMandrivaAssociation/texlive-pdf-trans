@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/generic/pdf-trans
+# catalog-date 2007-05-25 16:15:27 +0200
+# catalog-license pd
+# catalog-version 2.2
 Name:		texlive-pdf-trans
 Version:	2.2
 Release:	1
@@ -39,6 +45,7 @@ inspired by trans.tex, remade to work with pdfTeX.
 %{_texmfdistdir}/tex/generic/pdf-trans/pdf-trans.tex
 %doc %{_texmfdistdir}/doc/generic/pdf-trans/example.pdf
 %doc %{_texmfdistdir}/doc/generic/pdf-trans/example.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -49,3 +56,5 @@ inspired by trans.tex, remade to work with pdfTeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
