@@ -6,7 +6,7 @@
 # catalog-version 2.2
 Name:		texlive-pdf-trans
 Version:	2.2
-Release:	1
+Release:	2
 Summary:	A set of macros for various transformations of TeX boxes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/pdf-trans
