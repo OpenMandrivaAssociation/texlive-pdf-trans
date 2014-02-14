@@ -1,12 +1,12 @@
-# revision 32223
+# revision 32809
 # category Package
 # catalog-ctan /macros/generic/pdf-trans
-# catalog-date 2013-11-23 01:14:10 +0100
+# catalog-date 2014-01-28 18:35:23 +0100
 # catalog-license pd
-# catalog-version 2.3
+# catalog-version 2.4
 Name:		texlive-pdf-trans
-Version:	2.3
-Release:	5
+Version:	2.4
+Release:	1
 Summary:	A set of macros for various transformations of TeX boxes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/pdf-trans
