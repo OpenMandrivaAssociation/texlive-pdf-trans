@@ -1,18 +1,12 @@
-# revision 32809
-# category Package
-# catalog-ctan /macros/generic/pdf-trans
-# catalog-date 2014-01-28 18:35:23 +0100
-# catalog-license pd
-# catalog-version 2.4
 Name:		texlive-pdf-trans
-Version:	2.4
-Release:	6
+Version:	32809
+Release:	1
 Summary:	A set of macros for various transformations of TeX boxes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/pdf-trans
 License:	PD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pdf-trans.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pdf-trans.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pdf-trans.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pdf-trans.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ of TeX boxes (based on plain and pdfeTeX primitives). It was
 initially inspired by trans.tex, remade to work with pdfTeX.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -39,7 +33,7 @@ initially inspired by trans.tex, remade to work with pdfTeX.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
