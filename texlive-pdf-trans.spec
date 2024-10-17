@@ -3,7 +3,7 @@ Version:	32809
 Release:	2
 Summary:	A set of macros for various transformations of TeX boxes
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/generic/pdf-trans
+URL:		https://www.ctan.org/tex-archive/macros/generic/pdf-trans
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pdf-trans.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pdf-trans.doc.r%{version}.tar.xz
